@@ -1,0 +1,62 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.about-name {
+  font-size: 6.75rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  letter-spacing: 0.125em;
+}
+
+.about-position {
+  font-weight: 500;
+  margin: 0rem;
+  letter-spacing: 0.125em;
+}
+
+.profile-img-container {
+  margin: 5rem 0rem;
+  width: 9rem;
+  height: 9rem;
+}
+
+.profile-img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.about-paragraph-container {
+  width: 28rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .about-name {
+    font-size: 5.75rem;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  .about-name {
+    font-size: 4.75rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .about-name {
+    font-size: 3.75rem;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .about-name {
+    font-size: 2.75rem;
+  }
+}

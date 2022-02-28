@@ -1,0 +1,55 @@
+.left-side-bar-container,
+.right-side-bar-container {
+  width: 7.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.rb-email {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: translateY(-15rem) rotate(90deg);
+}
+
+.left-side-bar-container {
+  left: 0;
+}
+
+.right-side-bar-container {
+  right: 0;
+}
+
+.left-side-bar-ul {
+  list-style: none;
+  margin: 0rem 0rem 8.4rem;
+  padding: 0rem;
+}
+
+.left-side-bar-ul > li {
+  padding: 0.75rem;
+}
+
+.li-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text);
+  /* cursor: pointer; */
+}
+
+.li-icon:hover,
+.rb-email:hover {
+  color: var(--hover);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.li-icon:hover {
+  transform: translateY(-3px);
+}
+
+.rb-email:hover {
+  transform: translateY(-15.25rem) rotate(90deg);
+}

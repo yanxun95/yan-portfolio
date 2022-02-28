@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Forum",
+    "description": "An Android application that allows user to create post and view the upcoming event.",
+    "technology": ["Java", "Firebase", "Android studio", "API"],
+    "gitHubLink": "https://github.com/yanxun95/Year3-Forum"
+  },
+  {
+    "title": "Color Identify",
+    "description": "An Android application that help user to distinguish the color from picture and live camera.",
+    "technology": ["Java", "SQLite", "Android studio", "API"],
+    "gitHubLink": "https://github.com/yanxun95/Year4-Color-Identify"
+  },
+  {
+    "title": "My Space",
+    "description": "A social network which allows user to customise their own profile component",
+    "technology": ["React", "Node.js", "Redux", "MongoDB", "Express"],
+    "gitHubLink": "https://github.com/yanxun95/my-space-fe"
+  }
+]

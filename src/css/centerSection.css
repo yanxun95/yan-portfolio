@@ -1,0 +1,15 @@
+.center-section-container {
+  max-width: 1000px;
+  margin: 0rem 7.5rem;
+}
+
+.section-title {
+  text-align: center;
+  width: 300px;
+  font-size: 2rem;
+  letter-spacing: 0.125em;
+  font-weight: 400;
+  border-bottom: 4px solid var(--underline);
+  padding: 1.5rem 0rem;
+  margin-bottom: 2rem;
+}
