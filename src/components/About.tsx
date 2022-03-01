@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="aboutContainer" className="section-container">
       <h1 className="about-name">YAN XUN CHANG</h1>
-      <p className="about-position">FULL STAKE DEVELOPER</p>
+      <p className="about-position">FULL STACK DEVELOPER</p>
       <div className="profile-img-container">
         <img
           src="https://res.cloudinary.com/dobdsx6ge/image/upload/v1645720764/Portfolio/face_co_rmc4ey.png"
@@ -25,8 +25,10 @@ const About = () => {
           development is quite interesting that&#39;s why I apply for full stack
           web developer course.
         </p>
-        <p>
-          Here are a few technologies I&#39;ve been working with recently:
+        <div>
+          <p>
+            Here are a few technologies I&#39;ve been working with recently:
+          </p>
           <ul className="about-tech-list">
             <li>JavaScript (ES6+)</li>
             <li>React</li>
@@ -35,7 +37,7 @@ const About = () => {
             <li>Express JS</li>
             <li>Redux</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );

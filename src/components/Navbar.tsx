@@ -1,5 +1,8 @@
 import "../css/navbar.css";
 const Navbar = () => {
+  const downloadResume = () => {
+    ("");
+  };
   return (
     <ul className="top-navbar-ul">
       <a href="#aboutContainer" className="navbar-link">
@@ -9,9 +12,16 @@ const Navbar = () => {
         <li>Project</li>
       </a>
       <a href="#contactContainer" className="navbar-link">
-        <li>Conact</li>
+        <li>Contact</li>
       </a>
-      <li className="navbar-link">Resume</li>
+      <a
+        href="https://drive.google.com/file/d/1B3qcV3y9RX5HmCglxM5rxsYiufiwe_BJ/view?usp=sharing"
+        target={"_blank"}
+        rel="noreferrer"
+        className="navbar-link"
+      >
+        <li>Resume</li>
+      </a>
     </ul>
   );
 };
