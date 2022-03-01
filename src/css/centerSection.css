@@ -3,6 +3,13 @@
   margin: 0rem 7.5rem;
 }
 
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0rem 5rem;
+}
+
 .section-title {
   text-align: center;
   width: 300px;
@@ -12,4 +19,10 @@
   border-bottom: 4px solid var(--underline);
   padding: 1.5rem 0rem;
   margin-bottom: 2rem;
+}
+
+.section-paragraph-container {
+  width: 28rem;
+  text-align: justify;
+  font-size: 1.2rem;
 }

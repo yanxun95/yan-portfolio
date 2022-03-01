@@ -13,6 +13,8 @@
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: translateY(-15rem) rotate(90deg);
+  color: var(--text);
+  text-decoration: none;
 }
 
 .left-side-bar-container {
@@ -37,7 +39,6 @@
   width: 20px;
   height: 20px;
   color: var(--text);
-  /* cursor: pointer; */
 }
 
 .li-icon:hover,

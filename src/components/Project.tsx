@@ -5,7 +5,7 @@ import { FiFolder } from "react-icons/fi";
 
 const Project = () => {
   return (
-    <div id="projectContainer" className="project-container">
+    <div id="projectContainer" className="section-container">
       <div className="section-title">Project</div>
       <Container>
         <Row className="project-list">

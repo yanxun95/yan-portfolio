@@ -2,7 +2,7 @@ import "../css/about.css";
 
 const About = () => {
   return (
-    <div id="aboutContainer" className="about-container">
+    <div id="aboutContainer" className="section-container">
       <h1 className="about-name">YAN XUN CHANG</h1>
       <p className="about-position">FULL STAKE DEVELOPER</p>
       <div className="profile-img-container">
@@ -12,7 +12,7 @@ const About = () => {
           className="profile-img"
         />
       </div>
-      <div className="about-paragraph-container">
+      <div className="section-paragraph-container">
         <p>
           Hi, my name is Yan and I am from Malaysia. I completed my Bachelor of
           Science (Honours) Computing in Technological University Dublin. After
@@ -23,8 +23,18 @@ const About = () => {
           Personally, I always love to learn new knowledge. When I&#39;m on my
           degree, my interest in in android development, but I find out web
           development is quite interesting that&#39;s why I apply for full stack
-          web developer course. Curretly I&#39;m a MERN stack developer who is
-          looking for opportunities.
+          web developer course.
+        </p>
+        <p>
+          Here are a few technologies I&#39;ve been working with recently:
+          <ul className="about-tech-list">
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Mongo</li>
+            <li>Express JS</li>
+            <li>Redux</li>
+          </ul>
         </p>
       </div>
     </div>
