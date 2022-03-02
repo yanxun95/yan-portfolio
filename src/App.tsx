@@ -10,11 +10,9 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Homapage />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Homapage />} />
+    </Routes>
   );
 }
 
