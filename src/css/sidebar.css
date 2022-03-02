@@ -12,7 +12,7 @@
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  transform: translateY(-15rem) rotate(90deg);
+  transform: translateY(-10rem) rotate(90deg);
   color: var(--text);
   text-decoration: none;
 }
@@ -27,7 +27,7 @@
 
 .left-side-bar-ul {
   list-style: none;
-  margin: 0rem 0rem 8.4rem;
+  margin: 0rem 0rem 4rem;
   padding: 0rem;
 }
 
@@ -53,4 +53,27 @@
 
 .rb-email:hover {
   transform: translateY(-15.25rem) rotate(90deg);
+}
+
+@media only screen and (max-width: 720px) {
+  .left-side-bar-container,
+  .right-side-bar-container {
+    width: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .right-side-bar-container {
+    display: none;
+  }
+
+  .left-side-bar-container {
+    width: auto;
+    position: static;
+  }
+
+  .left-side-bar-ul {
+    margin: 0;
+    display: flex;
+  }
 }

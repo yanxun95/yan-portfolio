@@ -10,11 +10,7 @@ const Project = () => {
       <Container>
         <Row className="project-list">
           {projects.map((project) => (
-            <Col
-              className="g-0 project-item"
-              // onClick={() => newPage("test")}
-              key={project.title}
-            >
+            <Col className="g-0 project-item" key={project.title}>
               <a
                 href={project.gitHubLink}
                 target="blank"

@@ -1,8 +1,5 @@
 import "../css/navbar.css";
 const Navbar = () => {
-  const downloadResume = () => {
-    ("");
-  };
   return (
     <ul className="top-navbar-ul">
       <a href="#aboutContainer" className="navbar-link">

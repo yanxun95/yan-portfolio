@@ -1,6 +1,8 @@
 .center-section-container {
   max-width: 1000px;
   margin: 0rem 7.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-container {
@@ -25,4 +27,14 @@
   width: 28rem;
   text-align: justify;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .section-paragraph-container {
+    width: 22rem;
+  }
+
+  .center-section-container {
+    margin: 0rem;
+  }
 }

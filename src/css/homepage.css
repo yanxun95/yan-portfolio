@@ -1,11 +1,16 @@
 .homapage-main-container {
   width: 100%;
-  height: 100vh;
 }
 
 .homapage-container {
   display: flex;
   justify-content: center;
   width: inherit;
-  height: 96%;
+}
+
+@media only screen and (max-width: 420px) {
+  .homapage-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

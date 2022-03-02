@@ -56,3 +56,9 @@
 .project-description {
   height: 4.5rem;
 }
+
+@media only screen and (max-width: 420px) {
+  .project-list {
+    padding: 0rem 1.5rem;
+  }
+}
