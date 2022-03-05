@@ -52,7 +52,7 @@
 }
 
 .rb-email:hover {
-  transform: translateY(-15.25rem) rotate(90deg);
+  transform: translateY(-10.25rem) rotate(90deg);
 }
 
 @media only screen and (max-width: 720px) {
