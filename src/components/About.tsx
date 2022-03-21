@@ -15,9 +15,9 @@ const About = () => {
       <div className="section-paragraph-container">
         <p>
           Hi, my name is Yan and I am from Malaysia. I completed my Bachelor of
-          Science (Honours) Computing in Technological University Dublin. After
-          finished my degree, I&#39;ve join Strive School for full stack web
-          developer course.
+          Science (Honors) at Technological University Dublin. After finished my
+          degree, I&#39;ve join Strive School for full stack web developer
+          course.
         </p>
         <p>
           Personally, I always love to learn new knowledge. When I&#39;m on my
