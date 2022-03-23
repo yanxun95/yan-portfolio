@@ -23,7 +23,9 @@ const About = () => {
           Personally, I always love to learn new knowledge. When I&#39;m on my
           degree, my interest in in android development, but I find out web
           development is quite interesting that&#39;s why I apply for full stack
-          web developer course.
+          web developer course. Right now I&#39;m proud to say I'm a Full-Stack
+          Developer looking for an opportunity where I can start my adventure in
+          web development.
         </p>
         <div>
           <p>
