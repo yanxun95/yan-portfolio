@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Homapage from "./components/Homepage";
+import Homepage from "./components/Homepage";
 import { useEffect } from "react";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Homapage />} />
+      <Route path="/" element={<Homepage />} />
     </Routes>
   );
 }
