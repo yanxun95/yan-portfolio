@@ -33,10 +33,10 @@ const About = () => {
           </p>
           <ul className="about-tech-list">
             <li>JavaScript (ES6+)</li>
-            <li>React</li>
+            <li>TypeScript</li>
             <li>Node.js</li>
-            <li>Mongo</li>
             <li>Express JS</li>
+            <li>React</li>
             <li>Redux</li>
           </ul>
         </div>
