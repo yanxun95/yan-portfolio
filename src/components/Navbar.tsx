@@ -12,7 +12,7 @@ const Navbar = () => {
         <li>Contact</li>
       </a>
       <a
-        href="https://drive.google.com/file/d/1bMZrz9WnmXDRadXpWx6HzKr2DDdICLim/view?usp=sharing"
+        href="https://drive.google.com/file/d/16L3-j-rFDovGvq3m5Ke3MyJN8bdT8eiI/view?usp=sharing"
         target={"_blank"}
         rel="noreferrer"
         className="navbar-link"
