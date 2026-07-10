@@ -20,7 +20,12 @@ export default function Experience() {
             className={styles.tabs}
             role="tablist"
             aria-label="Experience tabs"
-            style={{ '--tab-count': experiences.length } as React.CSSProperties}
+            style={
+              {
+                '--tab-count': experiences.length,
+                '--active-index': activeIndex,
+              } as React.CSSProperties
+            }
           >
             {experiences.map((exp, index) => (
               <button
@@ -33,10 +38,7 @@ export default function Experience() {
                 {exp.company}
               </button>
             ))}
-            <span
-              className={styles.tabIndicator}
-              style={{ transform: `translateY(${activeIndex * 100}%)` }}
-            />
+            <span className={styles.tabIndicator} />
           </div>
 
           <div className={styles.panel} role="tabpanel">
