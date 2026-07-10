@@ -1,0 +1,83 @@
+@use '../../styles/abstracts' as *;
+
+.about {
+  @include section-padding;
+}
+
+.container {
+  @include container;
+  @include fade-in;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+.content {
+  margin-bottom: $spacing-3xl;
+}
+
+.bio {
+  max-width: 720px;
+
+  p {
+    font-size: $font-size-md;
+    color: $secondary-text;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-2xl;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+  }
+}
+
+.skillGroup {
+  @include card;
+  padding: $spacing-xl;
+}
+
+.skillGroupTitle {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+  margin-bottom: $spacing-lg;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+}
+
+.skillTag {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $text-color;
+  background-color: $secondary-background;
+  border-radius: $radius-md;
+  transition: background-color $transition-fast, color $transition-fast;
+
+  &:hover {
+    background-color: $border-color;
+  }
+}

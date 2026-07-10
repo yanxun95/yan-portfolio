@@ -1,0 +1,172 @@
+@use '../../styles/abstracts' as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-navbar;
+  height: $navbar-height;
+  transition: background-color $transition-base, backdrop-filter $transition-base;
+
+  &.scrolled {
+    background-color: rgba($background-color, 0.8);
+    backdrop-filter: blur(12px);
+  }
+}
+
+.container {
+  @include container;
+  @include flex-between;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $text-color;
+  letter-spacing: -0.02em;
+  @include focus-visible;
+}
+
+// Desktop navigation (hidden on mobile)
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $secondary-text;
+  transition: color $transition-fast;
+  padding: $spacing-xs 0;
+  position: relative;
+  @include focus-visible;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: $accent-color;
+    transition: width $transition-base;
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &.active {
+    color: $text-color;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// Mobile overlay (hidden on desktop)
+.overlay {
+  display: none;
+
+  @include mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: rgba($background-color, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity $transition-base, visibility $transition-base;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: $spacing-xl;
+}
+
+.mobileNavLink {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  color: $secondary-text;
+  padding: $spacing-sm $spacing-lg;
+  transition: color $transition-fast;
+  @include focus-visible;
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &.active {
+    color: $accent-color;
+  }
+}
+
+// Hamburger button (visible only on mobile)
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 3;
+  @include focus-visible;
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: $text-color;
+  transition: transform $transition-base, opacity $transition-fast;
+  transform-origin: center;
+
+  .hamburger.open & {
+    &:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+  }
+}

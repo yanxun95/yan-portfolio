@@ -1,0 +1,16 @@
+@use '../../styles/abstracts' as *;
+
+.footer {
+  padding: $spacing-xl 0;
+  text-align: center;
+}
+
+.container {
+  @include container;
+}
+
+.copyright {
+  font-size: $font-size-sm;
+  color: $text-color;
+  font-weight: $font-weight-medium;
+}

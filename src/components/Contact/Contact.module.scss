@@ -1,0 +1,56 @@
+@use '../../styles/abstracts' as *;
+
+.contact {
+  @include section-padding;
+}
+
+.container {
+  @include container;
+  @include fade-in;
+  max-width: 640px;
+  text-align: center;
+}
+
+.sectionTitle {
+  @include section-title;
+  justify-content: center;
+
+  &::after {
+    display: none;
+  }
+}
+
+.message {
+  font-size: $font-size-md;
+  color: $secondary-text;
+  line-height: $line-height-relaxed;
+  margin-bottom: $spacing-2xl;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-lg;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  color: $secondary-text;
+  padding: $spacing-sm $spacing-lg;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  transition: all $transition-base;
+  @include focus-visible;
+
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+    transform: translateY(-2px);
+    box-shadow: $shadow-sm;
+  }
+}

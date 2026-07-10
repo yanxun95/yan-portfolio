@@ -1,0 +1,147 @@
+@use '../../styles/abstracts' as *;
+
+.projects {
+  @include section-padding;
+}
+
+.container {
+  @include container;
+  @include fade-in;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-4xl;
+
+  @include mobile {
+    gap: $spacing-xl;
+  }
+
+  .row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.row {
+  @include card;
+  border: none;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  display: block;
+  flex: 0 0 60%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: $background-color;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.projectImage {
+  object-fit: contain;
+  transition: transform $transition-slow;
+  transform: scale(1);
+
+  .imageWrapper:hover & {
+    transform: scale(1.03);
+  }
+}
+
+.rowContent {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  padding: $spacing-xl;
+  margin: 0 (-$radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $white;
+  border-radius: $radius-lg;
+
+  @include mobile {
+    margin: 0;
+    border-radius: 0;
+    text-align: left;
+
+    .tags,
+    .links {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.eyebrow {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $accent-color;
+  margin-bottom: $spacing-xs;
+}
+
+.projectTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $spacing-xs;
+}
+
+.projectDescription {
+  font-size: $font-size-sm;
+  color: $secondary-text;
+  line-height: $line-height-relaxed;
+  margin-bottom: $spacing-lg;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  margin-bottom: $spacing-lg;
+}
+
+.tag {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  color: $secondary-text;
+  background-color: $secondary-background;
+  padding: 4px 10px;
+  border-radius: $radius-sm;
+}
+
+.links {
+  display: flex;
+  gap: $spacing-md;
+  padding-top: $spacing-md;
+  border-top: 1px solid $border-color;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $secondary-text;
+  transition: color $transition-fast;
+  @include focus-visible;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
