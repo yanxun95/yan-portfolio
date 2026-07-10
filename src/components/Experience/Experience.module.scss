@@ -84,6 +84,7 @@
   width: 2px;
   height: calc(100% / var(--tab-count, 2));
   background-color: $accent-color;
+  transform: translateY(calc(var(--active-index, 0) * 100%));
   transition: transform $transition-base;
 
   @include mobile {
@@ -92,6 +93,7 @@
     left: 0;
     width: calc(100% / var(--tab-count, 2));
     height: 2px;
+    transform: translateX(calc(var(--active-index, 0) * 100%));
   }
 }
 
