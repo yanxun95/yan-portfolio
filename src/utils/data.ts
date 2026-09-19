@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
       'Implemented frontend features with a focus on maintainability, performance optimization, and user experience',
       'Deployed and maintained web applications on Vercel, managing production releases and application updates',
     ],
-    technologies: ['React 18', 'Vite', 'React Router', 'i18next', 'Three.js', 'SCSS', 'Vite Image Tools', 'Google reCAPTCHA v3'],
+    technologies: ['React', 'Next.js', 'Vite', 'React Router', 'i18next', 'Three.js', 'SCSS', 'Vite Image Tools', 'Google reCAPTCHA v3'],
   },
 ];
 
@@ -43,6 +43,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'React' },
       { name: 'Vue.js' },
+      { name: 'Nuxt.js' },
       { name: 'JavaScript' },
       { name: 'TypeScript' },
       { name: 'HTML' },
@@ -80,7 +81,7 @@ export const projects: Project[] = [
     description:
       'An interactive stone slab product showcase featuring a custom 3D viewer built with Three.js. Users can explore different products through realistic lighting, materials, and viewing angles, supported by a React-based catalog experience.',
     image: '/images/project-whitestone-screenshot.png',
-    technologies: ['React 18', 'Vite', 'React Router', 'i18next', 'Three.js', 'SCSS', 'Vite Image Tools', 'Google reCAPTCHA v3'],
+    technologies: ['React 19', 'Next.js', 'i18next', 'Three.js', 'SCSS', 'Google reCAPTCHA v3'],
     githubUrl: undefined,
     liveUrl: 'https://www.whitestone.com.my/',
   },
